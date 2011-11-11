@@ -8,7 +8,7 @@ $args = array(
 	'order' => 'DESC',
 	'post_type' => 'post',
 	'post_status' => 'publish',
-	'exclude' => 'cat=-37'
+	'exclude' => 'cat=-109'
 );
 
 $posts = get_posts($args);
