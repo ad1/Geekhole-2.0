@@ -5,7 +5,7 @@
 $args = array(
 		'numberposts' => 3,
 		'offset' => 0,
-		'category' => 103, //HERE!
+		'category' => 37, //HERE!
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
