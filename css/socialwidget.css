@@ -1,0 +1,121 @@
+/*   
+	Theme Name: Social Widget
+	Theme URI: http://www.geekhole.ch
+	Description: Social Media Widget for geekhole.ch
+	Author: Deniaz
+	Author URI: http://www.cheekyowl.com
+	Version: 1.0
+*/
+
+@CHARSET "UTF-8";
+
+#social-widget p.handwritten
+{
+	font-family: "Gochi Hand";
+	font-size: 2.5em;
+	margin: 0 0 0 30px;
+}
+
+#social-bubble-triangle
+{
+	background: url("../images/social-triangle.png") no-repeat;
+	background-position: 40px bottom; 
+	height: 30px;
+}
+#social-bubble
+{
+	background: #09C;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#social-bubble ul
+{
+	list-style: none;
+}
+
+#social-bubble ul li	
+{
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 20px 0 20px 5px;
+}
+
+#social-bubble a
+{
+	color: #CCC;
+	font-size: 1.25em;
+}
+
+#social-bubble a span
+{
+	color: #FFF;
+	font-weight: bold;
+}
+
+#social-bubble ul li
+{
+	background: url("../images/sprite.png") no-repeat;
+	cursor: pointer;
+}
+
+#social-bubble ul li#fb
+{
+	background-position: 0px 0;
+}
+
+#social-bubble ul li#fb:hover
+{
+	background-position: 0px -60px;
+}
+
+#social-bubble ul li#fb:active
+{
+	background-position: 0px -120px;
+}
+
+#social-bubble ul li#tw
+{
+	background-position: -60px 0;
+}
+
+#social-bubble ul li#tw:hover
+{
+	background-position: -60px -60px;
+}
+
+#social-bubble ul li#tw:active
+{
+	background-position: -60px -120px;
+}
+
+#social-bubble ul li#rss
+{
+	background-position: -120px 0;
+}
+
+#social-bubble ul li#rss:hover
+{
+	background-position: -120px -60px;
+}
+
+#social-bubble ul li#rss:active
+{
+	background-position: -120px -120px;
+}
+
+#social-bubble ul li#gp
+{
+	background-position: -180px 0;
+}
+
+#social-bubble ul li#gp:hover
+{
+	background-position: -180px -60px;
+}
+
+#social-bubble ul li#gp:active
+{
+	background-position: -180px -120px;
+}

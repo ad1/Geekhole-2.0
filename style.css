@@ -1,0 +1,309 @@
+/*   
+Theme Name: Geekhole
+Theme URI: http://www.geekhole.ch
+Description: Theme for the infamous geekhole.ch blog
+Author: Deniaz
+Author URI: http://www.cheekyowl.com
+Version: 2.0
+*/
+
+/* Global Definitions */
+
+body
+{
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.blue-bg
+{
+	background: #09C;
+}
+
+.blue
+{
+	color: #09C;
+}
+
+.grey
+{
+	color: #999;
+}
+
+a
+{
+	text-decoration: none;
+	color: #09C;
+}
+
+a:hover
+{
+	color: #73c4df;
+}
+
+a:active
+{
+	color: #002633;
+}
+
+.topic-label
+{
+	text-transform: uppercase;
+	color: #09C;
+	font-weight: bold;
+}
+
+h1
+{
+	font-weight: bold;
+}
+
+
+/* Separator */
+.separator-label
+{
+	text-transform: uppercase;
+	color: #333;
+	font-weight: bold;
+}
+
+.separator-label span
+{
+	margin-left: 80px;
+}
+
+.separator
+{
+	background: url("images/separator.png") no-repeat #FFF;
+	height: 16px;
+	margin: 10px 0;
+}
+
+/* Timeline */
+
+#timeline div.timeline-triangle
+{
+	background: url("images/triangle.png") no-repeat #FFF;
+	width: 12px;
+	height: 13px;
+}
+
+
+/* Image */
+
+div.image-container
+{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.image-container div.image-zoom
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background: url("images/zoom.png") no-repeat #1e97bf;
+	position: absolute;
+}
+
+.image-container div.caption
+{
+	font-size: 0.75em;
+	position: absolute;
+	bottom: 5px;
+	opacity: 0.8;
+	background: #000;
+	color: #FFF;
+}
+
+.image-container div.caption p
+{
+	margin: 5px 15px;
+}
+
+/* About Tile */
+div#about-tile div.inner-tile
+{
+	margin: 30px;
+}
+
+div#about-tile div.inner-tile h2
+{
+	text-transform: uppercase;
+	margin-bottom: none;
+	line-height: 0;
+}
+
+div#about-tile div.inner-tile h3, div#about-tile div.inner-tile p
+{
+	color: #FFF;
+}
+
+div#about-tile div.inner-tile h3::selection, div#about-tile div.inner-tile p::selection
+{
+	background: #FFF;
+	color: #09C;
+}
+
+/* Content */
+
+#content p
+{
+	font-size: 140%;
+}
+
+#content p
+{
+	line-height: 1.5;
+}
+
+#geekhole-logo
+{
+	width: 400px;
+	height: 150px;
+	background: url("images/logo.png") no-repeat #FFF;
+}
+
+/* Navigation */
+
+#header
+{
+	position: relative;
+}
+#navigation-container
+{
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+	
+	font-size: 1.25em;
+}
+
+#navigation-container ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation-container ul li
+{
+	float: left;
+	list-style: none;
+	border-bottom: 5px solid #CCC;
+	width: 33.3%;
+}
+
+#navigation-container ul li.active,
+#navigation-container ul li.active:hover
+{
+	border-bottom: 5px solid #09C;
+}
+
+#navigation-container ul li:hover
+{
+	border-bottom: 5px solid #73c4df;
+}
+
+#navigation-container ul li a
+{
+	color: #333;
+	font-weight: bold;
+}
+
+.inv
+{
+	display: none;
+}
+
+#content p::selection
+{
+	color: #FFF;
+	background: #FF5E99;
+	text-shadow: none;
+}
+
+/* Sticky Posts */
+
+.sticky-post
+{
+	float: left;
+	position: relative;
+}
+
+body .container div#sticky-posts.span-16
+{
+	margin-bottom: 30px;
+}
+
+#sticky-posts .sticky-post .caption
+{
+	position: absolute;
+	background: #000;
+	color: #FFF;
+	opacity: 0.9;
+	bottom: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+#sticky-posts .sticky-post .caption p
+{
+	margin: 5px 15px;
+}
+
+#sticky-posts .sticky-post.small .caption 
+{
+	width: 315px;
+	font-size: 1.25em;
+}
+#sticky-posts .sticky-post.small
+{
+	margin-top: -5px;
+}
+
+/* We Like Widget */
+
+#we-like-widget
+{
+	margin: 30px 0;
+	border-bottom: 1px solid #999;
+}
+
+#we-like-widget h3
+{
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #999;
+	margin-bottom: 20px;
+}
+
+
+#we-like-widget h3 .dark
+{
+	color: #FFF;
+	background: #000;
+	padding: 0 10px;
+}
+
+#we-like-widget ul.link-list
+{
+	list-style: none;
+}
+
+#we-like-widget ul.link-list a
+{
+	color: #333;
+	font-size: 1.25em;
+	background: url("images/we-like-url.png") center right no-repeat;
+    padding-right: 30px;
+
+
+}
+
+#we-like-widget ul.link-list a:hover
+{
+	color: #09C;
+}
