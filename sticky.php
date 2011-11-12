@@ -1,11 +1,13 @@
 <div id="sticky-posts" class="span-16">
-
-
 <?php
+
+$category = get_category_by_slug('front');
+$catID = $category->cat_ID;
+
 $args = array(
 		'numberposts' => 3,
 		'offset' => 0,
-		'category' => 109, //HERE!
+		'category' => $catID, //HERE!
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',

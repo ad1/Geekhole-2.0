@@ -1,6 +1,10 @@
 <?php get_header();
 
 get_template_part('sticky');
+
+$category = get_category_by_slug('front');
+$catID = $category->cat_ID;
+
 $args = array(
 	'numberposts' => 1,
 	'offset' => 0,
@@ -8,7 +12,7 @@ $args = array(
 	'order' => 'DESC',
 	'post_type' => 'post',
 	'post_status' => 'publish',
-	'exclude' => 'cat=-109'
+	'exclude' => "cat=-{$catID}"
 );
 
 $posts = get_posts($args);
@@ -70,6 +74,14 @@ foreach ($posts as $post)
 		}
 	?>
 	<p>
+		<?php
+			$author = get_the_author();
+			$date = get_the_date('d.F Y');
+		?>
+		<div class="post-info">
+			<span><?php echo $author; ?> <br />
+				<?php echo $date; ?></span>
+		</div>
 		<?php
 			the_content();
 		?>
