@@ -106,6 +106,7 @@ div.image-container
 	height: 25px;
 	background: url("images/zoom.png") no-repeat #1e97bf;
 	position: absolute;
+	display: none; /* Fix this as soon as Lightbox is implemented */
 }
 
 .image-container div.caption
@@ -149,9 +150,22 @@ div#about-tile div.inner-tile h3::selection, div#about-tile div.inner-tile p::se
 
 /* Content */
 
+div.post-info
+{
+	background: #f0eeff;
+	border-top: 5px solid #2a9cc3;
+	float: left;
+	padding: 20px 20px 10px 20px;
+	margin: 0 10px 0 0;
+	text-transform: uppercase;
+	line-height: 1;
+	font-size: 120%;
+	color: #666;
+}
+
 #content p
 {
-	font-size: 140%;
+	font-size: 130%;
 }
 
 #content p

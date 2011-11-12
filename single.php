@@ -36,6 +36,14 @@
 	?>
 	<p>
 		<?php
+			$author = get_the_author();
+			$date = get_the_date('d.F Y');
+		?>
+		<div class="post-info">
+			<span><?php echo $author; ?> <br />
+				<?php echo $date; ?></span>
+		</div>
+		<?php
 			the_content(); 
 		?>
 	</p>
