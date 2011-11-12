@@ -1,5 +1,20 @@
 <?php
-//&copy; 2011 by <a href="http://www.geekhole.ch">geekhole.ch</a> - All rights reserved. Questions? <a href="mailto:swag@geekhole.ch">swag@geekhole.ch</a>
+
+$category = get_category_by_slug('front');
+$catID = $category->cat_ID;
+
+$args = array(
+	'type' => 'post',
+	'child_of' => 0,
+	'orderby' => 'name',
+	'order' => 'ASC',
+	'hide_empty' => 1,
+	'hierarchical' => 1,
+	'exclude' => $catID,
+	'parent' => 0
+);
+
+$mainCategories = get_categories($args);
 
 $options = get_option( 'geekhole_theme_options' );
 ?>
@@ -9,7 +24,18 @@ $options = get_option( 'geekhole_theme_options' );
 		
 	<div id="topic-navigator" class="span-24">
 		<ul>
-			<strong>nuffin' here yet.</strong>
+			<?php
+				foreach ($mainCategories as $main)
+				{
+					$args['parent'] = $main->term_id;
+					$subCategories = get_categories($args);
+					echo "<li><strong>{$main->name}</strong></li>";
+					foreach ($subCategories as $sub)
+					{
+						echo "<li><em>{$sub->name}</em></li>";
+					}
+				} 
+			?>
 		</ul>
 	</div>
 	
