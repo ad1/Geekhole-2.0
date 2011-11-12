@@ -1,4 +1,6 @@
 <?php 
+
+	$homeURL = get_bloginfo('siteurl');
 	$args = array(
 		'child_of' => 0,
 		'sort_oder' => 'ASC',
@@ -68,12 +70,15 @@
 	<div id="page-wrap" class="container">
 		<div id="header" class="span-24">
 			<div class="span-16">
-				<div id="geekhole-logo" title="Geekhole - The Blog."></div>
+				<div id="geekhole-logo">
+					<a href="<?php echo $homeURL; ?>">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" width="400" height="150" alt="Geekhole - The Blog." title="Geekhole - The Blog." />
+					</a>					
+				</div>
 			</div>
 			<div id="navigation-container" class="span-8 last">
 				<ul>
 					<?php
-						$homeURL = get_bloginfo('siteurl');
 						$blog = true;
 						
 						foreach ($pages as $page)
