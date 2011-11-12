@@ -1,4 +1,4 @@
-<div class="class="span-8">
+<div class="span-8">
 	<form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
 	    <div>
         	<input type="text" id="s" name="s" value="" size="30" />
