@@ -11,6 +11,10 @@
 ?>
 
 <div id="area" class="span-8 last">
+
+	<?php
+		get_template_part('searchform');
+	?>
 	<div id="social-widget" class="span-8">
 		<p class="handwritten">find us!</p>
 		<div id="social-bubble-triangle"></div>
