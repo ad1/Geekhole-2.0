@@ -37,7 +37,7 @@
 	<p>
 		<?php
 			$author = get_the_author();
-			$date = get_the_date('d.F Y');
+			$date = get_the_date('d. F Y');
 		?>
 		<div class="post-info">
 			<span><?php echo $author; ?> <br />
