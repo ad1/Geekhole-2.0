@@ -27,11 +27,11 @@
 				<li id="tw" data-text="twitter.com/" data-light-text="geekhole_ch" data-url="http://www.twitter.com/geekhole_ch">
 					<p class="inv">Twitter</p>
 				</li>
-				<li id="rss" data-text="geekhole.ch/" data-light-text="rss" data-url="http://www.geekhole.ch/rss">
-					<p class="inv">RSS Feed</p>
-				</li>
 				<li id="gp" data-text="google.com/" data-light-text="plus" data-url="http://plus.google.com/115148340324970369147">
 					<p class="inv">Google+</p>
+				</li>
+				<li id="rss" data-text="geekhole.ch/" data-light-text="rss" data-url="http://www.geekhole.ch/rss">
+					<p class="inv">RSS Feed</p>
 				</li>
 			</ul>
 			<div class="clear"></div>
