@@ -14,7 +14,7 @@
 	
 	GH.imageZoom = {
 			init: function() {
-				$('.image-zoom').fancybox();
+				$('.image-zoom, .wp-caption a').fancybox();
 			}
 	};
 	
