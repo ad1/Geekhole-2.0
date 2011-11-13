@@ -410,3 +410,42 @@ h4.search-meta span
 {
 	font-size: 120%;
 }
+
+/* Navigator */
+#topic-list ul li
+{
+	list-style: none;
+}
+
+#topic-list ul li.main-category a
+{
+	font-weight: bold;
+	color: #666;
+}
+
+#topic-list ul li.main-category a:hover
+{
+	color: #8F8F8F;
+}
+
+#topic-list ul li.sub-category a
+{
+	font-weight: normal;
+	color: #999;
+	padding-left: 5px
+}
+
+#topic-list ul li.sub-category a:hover
+{
+	color: #B8B8B8;
+}
+
+#tag-cloud a
+{
+	color: #999;
+}
+
+#tag-cloud a:hover
+{
+	color: #666;
+}
