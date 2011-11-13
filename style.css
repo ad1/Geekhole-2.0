@@ -246,6 +246,21 @@ div.post-info
 	position: relative;
 }
 
+.sticky-post p
+{
+	color: #FFF;
+}
+
+.sticky-post:hover p
+{
+	color: #09C;
+}
+
+.sticky-post:hover p span.grey
+{
+	color: #FFF;
+}
+
 body .container div#sticky-posts.span-16
 {
 	margin-bottom: 30px;
