@@ -68,9 +68,10 @@ foreach ($posts as $post)
 					<?php
 						the_post_thumbnail();
 						$caption = get_post(get_post_thumbnail_id())->post_excerpt;
+						$fullURL = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
 					?>
 				</a>
-				<div class="image-zoom"></div>
+				<div class="image-zoom" href="<?php echo $fullURL; ?>"></div>
 				<div class="caption span-16">
 				<p><?php echo $caption; ?></p>
 				</div>

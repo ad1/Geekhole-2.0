@@ -3,8 +3,6 @@
 	var GH = GH || {};
 	
 	GH.backLinker = {
-		herp: 'asdf',
-		derp: 'foo',
 		init: function() {
 			if ($('#back-to-previous').length > 0) {
 				$('#back-to-previous').click(function() {
@@ -14,8 +12,15 @@
 		},
 	};
 	
+	GH.imageZoom = {
+			init: function() {
+				$('.image-zoom').fancybox();
+			}
+	};
+	
 	$(document).ready(function() {
 		$('#social-bubble').widgetize();
 		GH.backLinker.init();
+		GH.imageZoom.init();
 	});
 })(jQuery);

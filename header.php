@@ -56,8 +56,10 @@
 	<![endif]-->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/socialwidget.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/socialwidget.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/geekhole.js"></script>
 	

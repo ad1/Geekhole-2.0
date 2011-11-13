@@ -99,6 +99,7 @@ div.image-container
 
 .image-container div.image-zoom
 {
+	cursor: pointer;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -106,7 +107,6 @@ div.image-container
 	height: 25px;
 	background: url("images/zoom.png") no-repeat #1e97bf;
 	position: absolute;
-	display: none; /* Fix this as soon as Lightbox is implemented */
 }
 
 .image-container div.caption
