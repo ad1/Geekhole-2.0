@@ -13,14 +13,20 @@
 	
 	<?php
 		while(have_posts()) : the_post();
+		
+		$postID = get_the_ID();
+		$perma = get_permalink($postID);
 	?>
 	
 	<div class="span-16">
-		<h3><?php the_title(); ?></h3>
+		<h3><a href="<?php echo $perma; ?>"><?php the_title(); ?></a></h3>
+		<h4 class="search-meta">Verfasst von <span><?php the_author() ?></span>, am <span><?php the_time('d. F Y'); ?></span></h4>
 		<p>
 			<?php
 				the_excerpt(); 
 			?>
+			
+			<a class="read-now" href="<?php echo $perma; ?>">Jetzt lesen!</a>
 		</p>
 	</div>
 	<hr />
@@ -29,7 +35,8 @@
 		endwhile; 
 		else : 
 	?>
-		<h1 class="soan-16">Leider nichts gefunden :(</h1>
+		<h1 class="span-16 grey">:(</h1>
+		<h2 class="span-16">Leider hab ich nichts gefunden..</h2>
 	<?php 
 		endif;
 	?>
