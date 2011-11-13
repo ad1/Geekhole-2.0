@@ -1,5 +1,10 @@
 <?php
 	$term = $_GET['s'];
+	
+	if (empty($term))
+	{
+		$term = 'Suche...';
+	}
 
 	$term = htmlentities(trim($term));
 ?>
