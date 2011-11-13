@@ -150,6 +150,12 @@ div#about-tile div.inner-tile h3::selection, div#about-tile div.inner-tile p::se
 
 /* Content */
 
+#content blockquote
+{
+	border-left: 2px solid #CCC;
+	padding-left: 25px;
+}
+
 div.post-info
 {
 	background: #f0eeff;
@@ -448,4 +454,43 @@ h4.search-meta span
 #tag-cloud a:hover
 {
 	color: #666;
+}
+
+div.wp-caption.alignleft
+{
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+div.wp-caption.alignright
+{
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+div.wp-caption.aligncenter
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+div.wp-caption
+{
+	width: auto;
+	background: #F0EEFF;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #999;
+	margin: 0;
+}
+
+div.wp-caption img
+{
+	margin: 5px 0 5px 5px;
+}
+
+div.wp-caption p
+{
+	margin: 0 10px 10px 10px;
+	color: #333;
 }
