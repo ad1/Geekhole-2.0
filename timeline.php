@@ -59,6 +59,7 @@ foreach ($posts as $post)
 				?>
 			</p>
 		</div>
+	</div>
 		
 <?php 
 } 
