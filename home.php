@@ -28,6 +28,8 @@ foreach ($posts as $post)
 {
 	setup_postdata($post);
 	
+	$id = get_the_ID();
+	$perma = get_permalink($id);
 	?>
 <div id="content" class="span-16">
 	<div class="span-16 blog-title">
@@ -48,9 +50,11 @@ foreach ($posts as $post)
 			?>
 		</p>
 		<h1 class="span-16">
-			<?php
-				the_title();
-			?>
+			<a href="<?php echo $perma; ?>">
+				<?php
+					the_title();
+				?>
+			</a>
 		</h1>
 	</div>
 			
@@ -60,10 +64,12 @@ foreach ($posts as $post)
 			?>
 			
 			<div class="image-container span-16">
-				<?php
-					the_post_thumbnail();
-					$caption = get_post(get_post_thumbnail_id())->post_excerpt;
-				?>
+				<a href="<?php echo $perma; ?>">
+					<?php
+						the_post_thumbnail();
+						$caption = get_post(get_post_thumbnail_id())->post_excerpt;
+					?>
+				</a>
 				<div class="image-zoom"></div>
 				<div class="caption span-16">
 				<p><?php echo $caption; ?></p>
