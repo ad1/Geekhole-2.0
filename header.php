@@ -62,6 +62,10 @@
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/socialwidget.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/geekhole.js"></script>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+	  {lang: 'de'}
+	</script>
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -69,6 +73,15 @@
 </head>
 
 <body   <?php body_class(); ?>>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) {return;}
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<div id="page-wrap" class="container">
 		<div id="header" class="span-24">
 			<div class="span-16">

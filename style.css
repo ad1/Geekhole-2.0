@@ -167,6 +167,7 @@ div.post-info
 	line-height: 1;
 	font-size: 120%;
 	color: #666;
+	max-width: 40%;
 }
 
 #content p
@@ -493,4 +494,30 @@ div.wp-caption p
 {
 	margin: 0 10px 10px 10px;
 	color: #333;
+}
+
+#social-sharer
+{
+	margin: 20px 0;
+}
+
+.social-item
+{
+	float: left;
+	max-width: 50%;
+}
+
+.social-item.twitter
+{
+	width: 45%;
+}
+
+.social-item.google
+{
+	width: 25%;
+}
+
+.social-item.facebook
+{
+	width: 30%;
 }

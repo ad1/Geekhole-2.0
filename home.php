@@ -88,6 +88,12 @@ foreach ($posts as $post)
 		<div class="post-info">
 			<span><?php echo $author; ?> <br />
 				<?php echo $date; ?></span>
+			<div id="social-sharer">
+				<?php
+					$isFrontpage = true;
+					include(TEMPLATEPATH . '/inc/share.php');
+				?>
+			</div>
 		</div>
 		<?php
 			the_content();

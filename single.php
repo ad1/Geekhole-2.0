@@ -27,6 +27,11 @@
 					$fullURL = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
 				?>
 				<div class="image-zoom" href="<?php echo $fullURL; ?>"></div>
+				<?php
+					/*
+					 * The above href-Attribute is NOT valid HTML, it's an ugly hack for fancybox AND I DON'T F*CKING CARE ;)
+					 */ 
+				?>
 				<div class="caption span-16">
 				<p><?php echo $caption; ?></p>
 				</div>
@@ -43,6 +48,12 @@
 		<div class="post-info">
 			<span><?php echo $author; ?> <br />
 				<?php echo $date; ?></span>
+			<div id="social-sharer">
+				<?php
+					$isFrontpage = false;
+					include(TEMPLATEPATH . '/inc/share.php');
+				?>
+			</div>
 		</div>
 		<?php
 			the_content(); 
