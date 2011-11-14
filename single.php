@@ -46,7 +46,7 @@
 			$date = get_the_date('d. F Y');
 		?>
 		<div class="post-info">
-			<span><?php echo $author; ?> <br />
+			<span><strong><?php echo $author; ?></strong><br />
 				<?php echo $date; ?></span>
 			<div id="social-sharer">
 				<?php
