@@ -1,7 +1,10 @@
 <?php
 
-$category = get_category_by_slug('front');
-$catID = $category->cat_ID;
+$frontCategory = get_category_by_slug('front');
+$frontCatID = $frontCategory->cat_ID;
+
+$seriesCategory = get_category_by_slug('serien');
+$seriesCatID = $seriesCategory->cat_ID;
 
 $args = array(
 	'type' => 'post',
@@ -10,7 +13,7 @@ $args = array(
 	'order' => 'ASC',
 	'hide_empty' => 1,
 	'hierarchical' => 1,
-	'exclude' => $catID,
+	'exclude' => "{$frontCatID}, {$seriesCatID}",
 	'parent' => 0
 );
 

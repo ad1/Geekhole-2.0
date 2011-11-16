@@ -20,6 +20,7 @@
 	
 	$(document).ready(function() {
 		$('#social-bubble').widgetize();
+		$$('#geekhole-series').linkify();
 		GH.backLinker.init();
 		GH.imageZoom.init();
 	});

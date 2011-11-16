@@ -1,0 +1,52 @@
+#geekhole-series
+{
+	border-bottom: 1px solid #999;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#geekhole-series h2
+{
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #666;
+}
+
+#geekhole-series p
+{
+	font-size: 120%;
+	color: #666;
+}
+
+#geekhole-series h2 span.blue
+{
+	background: #CCC;
+	padding: 2px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.series
+{
+	width: 300px;
+	height: 80px;
+}
+
+#series-html5,
+#series-html5:hover,
+#series-html5:active
+{
+	background: url('../images/serien/html5.png');
+	background-position: 0 0;
+}
+
+#series-html5:hover
+{
+	background-position: 0 -80px;
+}
+
+#series-html5:active
+{
+	background-position: 0 -160px;
+}

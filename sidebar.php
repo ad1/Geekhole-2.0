@@ -1,13 +1,27 @@
 <?php
-    $args = array(
+    $bookmarkArgs = array(
 	    'orderby' => 'name',
-	    'oder' => 'ASC',
+	    'order' => 'ASC',
 	    'limit' => -1,
 	    'category_name' => 'We Like',
-	    'hide_invisible' => 1,
+	    'hide_invisible' => 1
     ); 
     
-    $bookmarks = get_bookmarks($args);
+    $bookmarks = get_bookmarks($bookmarkArgs);
+    
+    $seriesCategory = get_category_by_slug('serien');
+    $seriesCatID = $seriesCategory->cat_ID;
+    
+    $seriesArgs = array(
+    	'type' => 'post',
+    	'orderby' => 'name',
+    	'order' => 'ASC',
+    	'limit' => -1,
+    	'parent' => $seriesCatID,
+    	'hide_empty' => 1
+    );
+    
+    $series = get_categories($seriesArgs);
 ?>
 
 <div id="area" class="span-8 last">
@@ -48,6 +62,19 @@
 		?>
 		
 		</ul>
+	</div>
+	<div id="geekhole-series" class="span-8">
+		<h2>Geekhole <span class="blue">Serien</span></h2>
+		<?php
+			$description = $seriesCategory->description;
+			echo "<p>{$description}</p>";
+			
+			foreach ($series as $serie)
+			{
+				$link = $link = get_category_link($serie->term_id);
+				echo "<div data-url=\"{$link}\" id=\"series-{$serie->slug}\" class=\"series\"><span class=\"inv\">{$serie->name}</span></div>";
+			} 
+		?>
 	</div>
 	<div id="google-adsense" class="span-8">
 		<img src="https://www.google.com/help/hc/images/adsense_185665_adformat-text_300x250_de.png" alt="Google Adsense" />
