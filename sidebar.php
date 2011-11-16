@@ -72,7 +72,7 @@
 			foreach ($series as $serie)
 			{
 				$link = $link = get_category_link($serie->term_id);
-				echo "<div data-url=\"{$link}\" id=\"series-{$serie->slug}\" class=\"series\"><span class=\"inv\">{$serie->name}</span></div>";
+				echo "<a href=\"{$link}\"><div data-url=\"{$link}\" id=\"series-{$serie->slug}\" class=\"series\"><span class=\"inv\">{$serie->name}</span></div></a>";
 			} 
 		?>
 	</div>

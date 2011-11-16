@@ -62,7 +62,6 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/socialwidget.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/serieswidget.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/geekhole.js"></script>
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
