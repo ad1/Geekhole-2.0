@@ -17,5 +17,6 @@ like this:
 Authors
 -------
 **Geekhole Dev-Team**
-+ http://www.facebook.com/geekhole
-+ http://www.twitter.com/geekhole_ch
+
++ http://www.facebook.com/geekhole 
++ http://www.twitter.com/geekhole_ch  
