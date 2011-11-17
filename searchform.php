@@ -12,7 +12,7 @@
 <div class="span-8">
 	<form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
 	    <div>
-        	<input type="text" id="s" name="s" value="<?php echo $term; ?>" size="30" />
+        	<input data-default="<?php echo $term; ?>" type="text" id="s" name="s" value="<?php echo $term; ?>" size="30" />
         	<input type="submit" value="Search" id="searchsubmit" />
     	</div>
 	</form>

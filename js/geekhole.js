@@ -20,7 +20,11 @@
 	
 	$(document).ready(function() {
 		$('#social-bubble').widgetize();
+<<<<<<< HEAD
 		GH.backLinker.init();
+=======
+		$('input#s').searchify();
+>>>>>>> 0f12185... Added JS to handle search-input (empty, default text, ...)
 		GH.imageZoom.init();
 	});
 })(jQuery);
