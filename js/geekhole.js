@@ -10,6 +10,7 @@
 	
 	$(document).ready(function() {
 		$('#social-bubble').widgetize();
+		$('input#s').searchify();
 		GH.imageZoom.init();
 	});
 })(jQuery);
