@@ -8,12 +8,16 @@
 					$(this).focus(function() {
 						if ($(this).val() == $(this).attr('data-default')) {
 							$(this).val("");
+							$(this).addClass('dark');
 						}
 					});
 					
 					$(this).blur(function() {
 						if ($(this).val() == "") {
 							$(this).val($(this).attr('data-default'));
+							if ($(this).hasClass('dark')) {
+								$(this).removeClass('dark');
+							}
 						}
 					});
 				}
