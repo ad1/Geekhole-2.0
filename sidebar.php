@@ -50,6 +50,16 @@
 		</ul>
 	</div>
 	<div id="google-adsense" class="span-8">
-		<img src="https://www.google.com/help/hc/images/adsense_185665_adformat-text_300x250_de.png" alt="Google Adsense" />
+		<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-9823082346816029";
+			/* geekholeneu */
+			google_ad_slot = "7915826370";
+			google_ad_width = 300;
+			google_ad_height = 250;
+			//-->
+		</script>
+		<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
 	</div>
 </div>
